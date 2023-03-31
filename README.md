@@ -1,7 +1,7 @@
-# dio-live-dynamodb
-Repositório para o live coding do dia 30/09/2021 sobre o Amazon DynamoDB
+# Desafio de Projeto DynamoDB
+Repositório criado para o desafio de projeto "Boas práticas com DynamoDB" da DIO
 
-### Serviço utilizado
+### Serviços utilizados
   - Amazon DynamoDB
   - Amazon CLI para execução em linha de comando
 
@@ -81,7 +81,7 @@ aws dynamodb update-table \
 aws dynamodb query \
     --table-name Music \
     --key-condition-expression "Artist = :artist" \
-    --expression-attribute-values  '{":artist":{"S":"Iron Maiden"}}'
+    --expression-attribute-values  '{":artist":{"S":"Nirvana"}}'
 ```
 - Pesquisar item por artista e título da música
 
@@ -99,7 +99,7 @@ aws dynamodb query \
     --table-name Music \
     --index-name AlbumTitle-index \
     --key-condition-expression "AlbumTitle = :name" \
-    --expression-attribute-values  '{":name":{"S":"Fear of the Dark"}}'
+    --expression-attribute-values  '{":name":{"S":"Nevermind"}}'
 ```
 
 - Pesquisa pelo index secundário baseado no nome do artista e no título do álbum
@@ -109,7 +109,7 @@ aws dynamodb query \
     --table-name Music \
     --index-name ArtistAlbumTitle-index \
     --key-condition-expression "Artist = :v_artist and AlbumTitle = :v_title" \
-    --expression-attribute-values  '{":v_artist":{"S":"Iron Maiden"},":v_title":{"S":"Fear of the Dark"} }'
+    --expression-attribute-values  '{":v_artist":{"S":"Nirvana"},":v_title":{"S":"Nevermind"} }'
 ```
 
 - Pesquisa pelo index secundário baseado no título da música e no ano
@@ -119,5 +119,5 @@ aws dynamodb query \
     --table-name Music \
     --index-name SongTitleYear-index \
     --key-condition-expression "SongTitle = :v_song and SongYear = :v_year" \
-    --expression-attribute-values  '{":v_song":{"S":"Wasting Love"},":v_year":{"S":"1992"} }'
+    --expression-attribute-values  '{":v_song":{"S":"The Man Who Sold The World"},":v_year":{"S":"1994"} }'
 ```
