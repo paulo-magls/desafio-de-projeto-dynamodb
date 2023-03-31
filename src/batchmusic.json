@@ -3,30 +3,30 @@
         {
             "PutRequest": {
                 "Item": {
-                  "Artist": {"S": "Iron Maiden"},
-                  "SongTitle": {"S": "Wasting Love"},
-                  "AlbumTitle": {"S": "Fear of the Dark Live"},
-                  "SongYear": {"S": "1992"}
+                  "Artist": {"S": "Nirvana"},
+                  "SongTitle": {"S": "The Man Who Sold The World"},
+                  "AlbumTitle": {"S": "MTV Unplugged In New York"},
+                  "SongYear": {"S": "1994"}
                 }
             }
         },
         {
             "PutRequest": {
                 "Item": {
-                  "Artist": {"S": "Iron Maiden"},
-                  "SongTitle": {"S": "Weekend Warrior"},
-                  "AlbumTitle": {"S": "Fear of the Dark"},
-                  "SongYear": {"S": "1992"}
+                  "Artist": {"S": "Nirvana"},
+                  "SongTitle": {"S": "Smells Like Teen Spirit"},
+                  "AlbumTitle": {"S": "Nevermind"},
+                  "SongYear": {"S": "1991"}
                 }
             }
         },
         {
             "PutRequest": {
                 "Item": {
-                  "Artist": {"S": "Iron Maiden"},
-                  "SongTitle": {"S": "Fear of the Dark"},
-                  "AlbumTitle": {"S": "Fear of the Dark Tour"},
-                  "SongYear": {"S": "1992"}
+                  "Artist": {"S": "Nirvana"},
+                  "SongTitle": {"S": "About A Girl"},
+                  "AlbumTitle": {"S": "Bleach"},
+                  "SongYear": {"S": "1989"}
                 }
             }
         }
